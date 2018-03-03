@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Website Tutorial</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  .navbar{
+  	margin-bottom: 0;
+  	border-radius: 0;
+  	background-color: #5E4485;
+  	color: #FFF;
+  	padding: 1% 0;
+    font-size:1.2em;
+  	border: 0;
+  }
+  .navbar-brand{
+  	float: left;
+  	padding: 0 15px 5px;
+  	min-width: 55px;
+  }
+  .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus, .navbar-inverse .navbar-nav .active a:hover{
+  	color: #FFF;
+  	background-color: #5E4485;
+  }
+  .navbar-inverse .navbar-nav li a{
+    color:#D5D5D5;
+  }
+.carousel-caption{
+  top:50%;
+  transform: translateY(-50%);
+  text-transform: uppercase;
+}
+
+@media(max-width:600px){
+  .carousel-caption{
+    display: none;
+  }
+  #icon{
+    max-width: 150px;
+  }
+  h2{
+    font-size: 1.7em;
+  }
+}
+@media(max-width:900px){
+  .fa{
+    font-size:20px;
+    padding: 10px;
+  }
+}
+footer{
+  width: 100%;
+  background-color: #5E4485;
+  padding: 1%;
+  color:#FFF;
+}
+#icon{
+  max-width: 200px;
+  margin: 1% auto;
+}
+.fa{
+  padding: 15px;
+  font-size: 25px;
+  color: #FFF;
+}
+.fa:hover{
+  color: #D5D5D5;
+  text-decoration: none;
+}
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" href="#"><img src="resume.png"></a>
+    </div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="#">Home</a></li>
+				</ul>
+		</div>
+	</div>
+</nav><!---menu end -->
+
+<div id="myCarousel" class ="carousel silde" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1" ></li>
+    <li data-target="#myCarousel" data-slide-to="2" ></li>
+  </ol>
+  <div class ="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="mountains.png" class='img-responsive'>
+      <div class="carousel-caption">
+        <h1>Amardip R. Sabale</h1>
+      </div>
+    </div><!--end active-->
+    <div class="item">
+      <img src="snow.png" class='img-responsive'>
+      <div class="carousel-caption">
+        <h1>Get to know Me</h1>
+      </div>
+    </div>
+    <div class="item">
+      <img src="red.png" class='img-responsive'>
+      <div class="carousel-caption">
+        <h1>Thank you for Visiting Here !!!</h1>
+      </div>
+    </div>
+  </div>
+</div><!---carousel end-->
+<br>
+
+<div class="container-fluid">
+  <div class"row">
+    <h3><b><a href="#hidden" data-toggle="collapse">Click Here to Know About Me </a></b></h3>
+    <div id="hidden" class="collapse">
+      <p>
+        A Coder, Programmer, Software Developer by designation. A Problem solver who try to solve the problem using the required skillset and logic.
+        The one who love to work in the organization where the skills get challenged, tested and in the process it get enhanced.
+      </p>
+      <p>
+        I am Amardip R. Sabale. An emerging MEAN Stack Developer. I got trained in MEAN stack and looking for an apportunity to showcase the skills I posses.
+        I have worked in Object oriented technologies as well as in Legacy applications such as Mainframe. I have an experience in working with the different team sizes big and small. I am a team player and able to lead the team if needed.
+      </p>
+    </div>
+  </div>
+</div><!--End About-->
+
+<div class="container-fluid text-center">
+  <div class"row">
+    <div class="col-sm-12">
+      <h4><b>Worked in below technoogies so far...</b></h4><br>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3"col-xs-12>
+      <h4>Desktop Applications</h4>
+      <ul class="list-group">
+        <li class="list-group-item">C++</li>
+        <li class="list-group-item">JAVA </li>
+        <li class="list-group-item">C#.NET</li>
+        <li class="list-group-item">MySQL </li>
+      </ul>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+    <h4>Legacy Applications</h4>
+     <ul class="list-group">
+        <li class="list-group-item">MAINFRAME </li>
+        <li class="list-group-item">JCL </li>
+        <li class="list-group-item">COBOL</li>
+        <li class="list-group-item">DB2 </li>
+        <li class="list-group-item">SAS </li>
+      </ul>     
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <h4>Automation</h4>
+     <ul class="list-group">
+      <li class="list-group-item">VB SCRIPT </li>
+      <li class="list-group-item">REXX </li>
+      <li class="list-group-item">JAVA - SELENIUM</li>
+      </ul>
+    </div>
+    <div class="col-xs-12 col-sm-6 col-md-3">
+      <h4>Web Development</h4>
+     <ul class="list-group">
+        <li class="list-group-item">MEAN STACK </li>
+        <li class="list-group-item">BOOTSTRAP</li>
+        <li class="list-group-item">JADE </li>
+        <li class="list-group-item">AWS </li>
+      </ul>
+    </div>    
+  </div>
+</div>
+<br>
+
+<div class="container-fluid">
+  <div class"row">
+
+    <div class="col-xs-12 col-md-6">
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingOne">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+              Experience
+            </button>
+          </h5>
+        </div>
+        <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+          <div class="card-body ">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Software Developer in LnT(LTI) Pune Since august - 2016.</li>
+              <li class="list-group-item">Worked as Software Developer at Yippee Technology Pvt.Ltd, Jalgaon for 1 year.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <div class="col-xs-12 col-md-6">
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingTwo">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              Educational Qualifications
+            </button>
+          </h5>
+        </div>
+        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+          <div class="card-body ">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">B.E in Computer Engineering from NMU with 66.53%</li>
+              <li class="list-group-item">Diploma in Computer Engineering from MSBTE with 73.3%</li>
+              <li class="list-group-item">Passed HSC with 58.85% and SSC with 73.53% from State board</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="col-xs-12 col-md-6">
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingThree">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+              Project One
+            </button>
+          </h5>
+        </div>
+        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+          <div class="card-body ">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Online Resume WebPage</li>
+              <li class="list-group-item">This is the one, which you are currently visiting</li>
+              <li class="list-group-item">Technology used : HTML5, CSS, Bootstrap</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-xs-12 col-md-6">
+    <div id="accordion">
+      <div class="card">
+        <div class="card-header" id="headingFour">
+          <h5 class="mb-0">
+            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+              Project two
+            </button>
+          </h5>
+        </div>
+        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+          <div class="card-body ">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">Project name</li>
+              <li class="list-group-item">I will enter this when I have any other project</li>
+              <li class="list-group-item">Technology used : HTML5, CSS, Bootstrap,JQuery</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+</div>
+<br>
+
+<footer class="container-fluid text-center">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Contact me</h3>
+      <br>
+      <h5>Amardip Sabale, c/o abc bzy, s.no.9. Plot no.3, new Society, flat no.6, Old Nagar, Mumbai - 411045 </h5>
+      <h5>Mob : +91 1253625401</h5> 
+    </div>
+    <div class="col-sm-4">
+      <h3>Connect</h3>
+      <a href="#" class="fa fa-linkedin"></a>
+      <a href="#" class="fa fa-github"></a>
+      <a href="#" class="fa fa-facebook"></a>
+      <a href="#" class="fa fa-twitter"></a>
+    </div>
+    <div class="col-sm-4">
+      <img src="bunny.png" id="icon">
+    </div>
+  </div> 
+</footer><!--End footer-->
+</body>
+</html>
